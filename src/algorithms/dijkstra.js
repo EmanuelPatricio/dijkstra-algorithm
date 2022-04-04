@@ -5,7 +5,7 @@
 export function dijkstra(grid, startNode, finishNode) {
   const visitedNodesInOrder = [];
   startNode.distance = 0;
-  const unvisitedNodes = getAllNodes(grid); // Q: different from using grid or slice of grid???
+  const unvisitedNodes = getAllNodes(grid);
 
   while (unvisitedNodes.length) {
     sortNodesByDistance(unvisitedNodes);
